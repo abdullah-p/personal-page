@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.Page {
+  background-color: rgb(110, 225, 245);
+  font-family: 'Poppins', cursive ;
+  display:flex;
   flex-direction: column;
+  height:100vh;
+  padding: 10vh 10vh 10vh 10vh;
+  border-width: 5px;
+  border-color:black;
+}
+
+.Header {
+  display:flex;
+  flex-direction: column;
+  align-items: center ;
+}
+
+.Photo {
+  border-radius: 5em;
+  border-color: black;
+  border-width: 5px;
+  width:10em;
+}
+
+.Name {
+  font-size: 30px;
+  text-align: center;
+  margin-left: 10px;
+  
+}
+
+.Profile {
+  /* justify-content: center; */
+  display:flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-end ;
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 620px) {
+  .Profile {   
+    flex-direction: column;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Tab {
+  margin: 10px 10px 10px 10px;
+}
+
+.Pages {
+  margin: 20px 0px 20px 0px;
 }
